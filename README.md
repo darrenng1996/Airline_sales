@@ -3,7 +3,7 @@
 This dataset contains an airline passenger satisfaction survey.
 
 Content:
-Gender: Gender of the passengers (Female, Male)
+Gender: Gender of the passengers (Female, Male)  
 Customer Type: The customer type (Loyal customer, disloyal customer)
 Age: The actual age of the passengers
 Type of Travel: Purpose of the flight of the passengers (Personal Travel, Business Travel)
