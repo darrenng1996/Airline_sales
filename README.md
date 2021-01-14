@@ -31,6 +31,13 @@ All of the comparisons are done by MySql queries and graphs are done in Tableau
 Here are the questions I came up with for analyzing the dataset:
 
 1) How many loyal/disloyal customers in this dataset?
+  MySql code:
+  SELECT Customer_type, count(Customer_type)  
+  FROM airline.train1  
+  group by Customer_type  
+
+1) How many loyal/disloyal customers in this dataset?
+1) How many loyal/disloyal customers in this dataset?
 2) What are the primary type of travel(Personal/Business)?
 3) Satisfaction vs (Neutral or Dissatisfied) count?
 4) How many neutral or dissatisfied in eco/ecoplus/business class?
