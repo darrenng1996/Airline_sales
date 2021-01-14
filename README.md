@@ -2,6 +2,9 @@
 
 This dataset contains an airline passenger satisfaction survey.
 
+# Software used
+MySQL workbench, Tableau
+
 Content:  
 Gender: Gender of the passengers (Female, Male)  
 Customer Type: The customer type (Loyal customer, disloyal customer)  
@@ -27,7 +30,6 @@ Departure Delay in Minutes: Minutes delayed when departure
 Arrival Delay in Minutes: Minutes delayed when Arrival   
 Satisfaction: Airline satisfaction level(Satisfaction, neutral or dissatisfaction)  
 
-All of the comparisons are done by MySql queries and graphs are done in Tableau
 Here are the questions I came up with for analyzing the dataset:
 
 1) How many loyal/disloyal customers in this dataset?  
@@ -36,33 +38,33 @@ Here are the questions I came up with for analyzing the dataset:
   FROM airline.train1  
   group by Customer_type  
 
-2) What are the primary type of travel(Personal/Business)??  
+2) What are the primary type of travel(Personal/Business)?  
   MySql code:
    SELECT Type_of_travel, count(Type_of_travel)  
    FROM airline.train1  
    group by Type_of_travel    
  
-3) Satisfaction vs (Neutral or Dissatisfied) count?
+3) Satisfaction vs (Neutral or Dissatisfied) count?  
   MySql code:
   SELECT satisfaction, count(satisfaction)  
   FROM airline.train1  
   group by satisfaction  
 
-4) How many neutral or dissatisfied in eco/ecoplus/business class?
+4) How many neutral or dissatisfied in eco/ecoplus/business class?  
   MySql code:
   SELECT Class, count(satisfaction)  
   FROM airline.train1  
   where satisfaction = 'neutral or dissatisfied'  
   group by Class  
   
-5) Does loyal customer have more satisfaction than non-loyal?
+5) Does loyal customer have more satisfaction than non-loyal?  
   MySql code:
   SELECT Customer_type, count(satisfaction)  
   FROM airline.train1  
   where satisfaction = 'satisfied'  
   group by Customer_type  
   
-6) Does loyal customer have more neutral or dissatisfied than non-loyal?
+6) Does loyal customer have more neutral or dissatisfied than non-loyal?  
   MySql code:
   SELECT Customer_type, count(satisfaction)  
   FROM airline.train1  
