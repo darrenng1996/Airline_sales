@@ -26,7 +26,6 @@ Cleanliness: Satisfaction level of Cleanliness
 Departure Delay in Minutes: Minutes delayed when departure   
 Arrival Delay in Minutes: Minutes delayed when Arrival   
 Satisfaction: Airline satisfaction level(Satisfaction, neutral or dissatisfaction)  
-Note that this data set was modified from this dataset by John D here. It has been cleaned up for the purposes of classification  
 
 All of the comparisons are done by MySql queries and graphs are done in Tableau
 Here are the questions I came up with for analyzing the dataset:
