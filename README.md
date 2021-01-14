@@ -5,7 +5,7 @@ This dataset contains an airline passenger satisfaction survey.
 # Software used
 MySQL workbench, Tableau
 
-Content:  
+# Content
 Gender: Gender of the passengers (Female, Male)  
 Customer Type: The customer type (Loyal customer, disloyal customer)  
 Age: The actual age of the passengers  
@@ -70,6 +70,9 @@ Here are the questions I came up with for analyzing the dataset:
   FROM airline.train1  
   where satisfaction = 'neutral or dissatisfied'  
   group by Customer_type  
+  
+  
+ # Tableau
 
 ![](66D30A75-E791-4B3F-91D3-09F8C84A2445.jpeg)
 
