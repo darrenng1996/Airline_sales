@@ -1,6 +1,7 @@
 # Airline_Satisfaction
 
-This dataset contains an airline passenger satisfaction survey.
+This dataset contains an airline passenger satisfaction survey. This dataset can be found on www.kaggle.com.  
+The objective of this project is to analyze the relationship between customers satisfaction and various factors.
 
 # Software used
 MySQL workbench, Tableau
